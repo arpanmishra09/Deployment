@@ -34,7 +34,9 @@ def predict():
     # df= df.append(d,ignore_index='True') 
     # print(df)
     return render_template ('result.html',value= val)
-app.run(debug=True)#if debug=True is kept than the page is automatically saved each time we make chanages in the code
+
+if __name__=='__main__':
+    app.run(debug=True)#if debug=True is kept than the page is automatically saved each time we make chanages in the code
 
 
  
